@@ -5,11 +5,12 @@ metadata:
 spec:
   selector:
     app: search-app
-  type: LoadBalancer
   ports:
-    - protocol: TCP
-      port: 80
-      targetPort: 3000
-    - protocol: TCP
-      port: 81
-      targetPort: 3001
+    - name: port1
+      protocol: TCP
+      port: 8080
+      targetPort: 8080
+    - name: port2
+      protocol: TCP
+      port: 8081
+      targetPort: 8081
