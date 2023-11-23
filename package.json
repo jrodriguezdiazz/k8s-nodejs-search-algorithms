@@ -1,0 +1,15 @@
+{
+  "name": "k8s-nodejs-search-algorithms",
+  "version": "1.0.0",
+  "description": "This repository demonstrates the implementation of various search algorithms using NodeJS, deployed on Kubernetes (k8s) with pods, load balancing, resource limits, and more.",
+  "main": "index.js",
+  "repository": "https://github.com/jrodriguezdiazz/k8s-nodejs-search-algorithms.git",
+  "author": "jrodriguezdiazz <jrodriguezdiazz@outlook.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "scripts": {
+    "start-k8s": "kubectl apply -f pod-config.yaml && kubectl apply -f service-config.yaml"
+  }
+}

@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: search-apps-service
+spec:
+  selector:
+    app: search-app
+  type: LoadBalancer
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 3000
+    - protocol: TCP
+      port: 81
+      targetPort: 3001
