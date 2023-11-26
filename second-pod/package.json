@@ -1,5 +1,5 @@
 {
-  "name": "first-pod",
+  "name": "second-pod",
   "version": "1.0.0",
   "description": "This is the second pod, that contains the binary search algorithm, and bubble sort algorithm.",
   "main": "app.js",
