@@ -1,10 +1,10 @@
-FROM node:14
+FROM node:18.12.1
 
 WORKDIR /usr/src/app
 
 COPY . .
 
-RUN yarn install
+RUN npm install
 
 COPY . .
 
