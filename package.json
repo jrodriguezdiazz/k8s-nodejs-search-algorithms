@@ -6,9 +6,6 @@
   "repository": "https://github.com/jrodriguezdiazz/k8s-nodejs-search-algorithms.git",
   "author": "jrodriguezdiazz <jrodriguezdiazz@outlook.com>",
   "license": "MIT",
-  "dependencies": {
-    "express": "^4.18.2"
-  },
   "scripts": {
     "deploy": "kubectl apply -f pod-config.yaml && kubectl apply -f service-config.yaml",
     "cleanup": "kubectl delete -f pod-config.yaml && kubectl delete -f service-config.yaml"
