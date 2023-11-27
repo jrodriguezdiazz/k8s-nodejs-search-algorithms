@@ -45,6 +45,19 @@ To deploy these applications on a Kubernetes cluster, follow these steps:
 - Docker
 - NodeJS
 
+
+
+## Scripts
+
+```shell
+10213  kubectl expose pod nodejs-search-app-1 --type=LoadBalancer --name=nodejs-search-app-1 --port=3000 --target-port=3000
+10214  kubectl expose pod nodejs-search-app-2 --type=LoadBalancer --name=nodejs-search-app-2 --port=3001 --target-port=3001
+10219  minikube service nodejs-search-app-1
+10222  minikube service nodejs-search-app-2
+```
+
+
+
 ## Contributions
 
 Contributions, issues, and feature requests are welcome. Feel free to check [issues page](https://github.com/jrodriguezdiazz/k8s-nodejs-search-algorithms/issues) for open issues or to open a new issue.
