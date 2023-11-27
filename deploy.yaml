@@ -1,0 +1,49 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nodejs-search-app-1-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: search-app-1
+  template:
+    metadata:
+      labels:
+        app: search-app-1
+    spec:
+      containers:
+        - name: search-app-1-container
+          image: jrodriguezdiazz/search-app-1:latest
+          ports:
+            - containerPort: 3000
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nodejs-search-app-2-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: search-app-2
+  template:
+    metadata:
+      labels:
+        app: search-app-2
+    spec:
+      containers:
+        - name: search-app-2-container
+          image: jrodriguezdiazz/search-app-2:latest
+          ports:
+            - containerPort: 3001
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
