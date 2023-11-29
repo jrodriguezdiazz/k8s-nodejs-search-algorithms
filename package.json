@@ -7,7 +7,7 @@
   "author": "jrodriguezdiazz <jrodriguezdiazz@outlook.com>",
   "license": "MIT",
   "scripts": {
-    "deploy": "kubectl apply -f pod-config.yaml && kubectl apply -f service-config.yaml",
-    "cleanup": "kubectl delete -f pod-config.yaml && kubectl delete -f service-config.yaml"
+    "deploy": "kubectl apply -f pod-1-config.yaml && kubectl apply -f pod-2-config.yaml",
+    "cleanup": "kubectl delete -f pod-1-config.yaml && kubectl delete -f pod-2-config.yaml"
   }
 }
